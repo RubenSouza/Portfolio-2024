@@ -1,10 +1,5 @@
-import Navbar from "../components/Navbar";
+const Home = () => {
+  return <div>Home</div>;
+};
 
-export default function Home() {
-  return (
-    <main className="text-white">
-      <Navbar />
-      <h1>Teste</h1>
-    </main>
-  );
-}
+export default Home;

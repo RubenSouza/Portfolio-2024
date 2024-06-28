@@ -1,16 +1,26 @@
+"use client";
+
 import Image from "next/image";
 import logo from "../assets/img/logo/color-logo.svg";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import path from "path";
 
 const Nav = () => {
+  const activeLink = "font-medium text-accent border-b-2 border-accent";
+  const inactiveLink =
+    "font-medium text-white hover:text-accent transition-all";
+  const pathname = usePathname();
+
   return (
     <nav
-      className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+      className="max-w-[80rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
       aria-label="Global"
     >
       <div className="flex items-center justify-between">
-        <a
-          className="inline-flex items-center text-xl font-semibold dark:text-white"
-          href="#"
+        <Link
+          className="inline-flex items-center text-xl font-semibold "
+          href="/"
         >
           <Image
             className="w-28 h-auto"
@@ -20,11 +30,13 @@ const Nav = () => {
             alt="Logo"
           />
           <span className="pt-5">{/* {"{...}"} */}</span>
-        </a>
+        </Link>
         <div className="sm:hidden">
           <button
             type="button"
-            className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-neutral-700 dark:text-white dark:hover:bg-white/10"
+            className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 
+            bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none 
+               "
             data-hs-collapse="#navbar-image-2"
             aria-controls="navbar-image-2"
             aria-label="Toggle navigation"
@@ -68,27 +80,40 @@ const Nav = () => {
         className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block"
       >
         <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-          <a className="font-medium text-blue-500" href="#" aria-current="page">
-            Landing
-          </a>
-          <a
-            className="font-medium text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500"
-            href="#"
+          <Link
+            className={`${pathname === "/" ? activeLink : inactiveLink}`}
+            href="/"
           >
-            Account
-          </a>
-          <a
-            className="font-medium text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500"
-            href="#"
+            Home
+          </Link>
+          <Link
+            className={`${
+              pathname === "/services" ? activeLink : inactiveLink
+            }`}
+            href="/services"
+          >
+            Services
+          </Link>
+          <Link
+            className={`${pathname === "/resume" ? activeLink : inactiveLink}`}
+            href="/resume"
+          >
+            Resume
+          </Link>
+          <Link
+            className={`${pathname === "/work" ? activeLink : inactiveLink}`}
+            href="/work"
           >
             Work
-          </a>
-          <a
-            className="font-medium text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500"
-            href="#"
+          </Link>
+          <Link
+            className={`${
+              pathname === "/contact" ? activeLink : inactiveLink
+            } `}
+            href="/contact"
           >
-            Blog
-          </a>
+            Contact
+          </Link>
         </div>
       </div>
     </nav>

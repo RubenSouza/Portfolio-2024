@@ -11,7 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          100: "##ffffff",
+          100: "#ffffff",
           200: "#efefef",
           300: "#e0e0e0",
           400: "#d0d0d0",
@@ -24,6 +24,7 @@ const config: Config = {
           400: "#181818",
           500: "#000000",
         },
+        accent: "#EC4E20",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
