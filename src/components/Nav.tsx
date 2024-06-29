@@ -14,7 +14,7 @@ const Nav = () => {
 
   return (
     <nav
-      className="max-w-[80rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
+      className="container px-4 w-full mx-auto sm:flex sm:items-center sm:justify-between"
       aria-label="Global"
     >
       <div className="flex items-center justify-between">
@@ -23,7 +23,7 @@ const Nav = () => {
           href="/"
         >
           <Image
-            className="w-28 h-auto"
+            className="w-20 h-auto"
             src={logo}
             width={200}
             height={200}
