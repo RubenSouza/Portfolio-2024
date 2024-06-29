@@ -28,7 +28,7 @@ const Cover = () => {
               ease: "easeInOut",
             },
           }}
-          className="absolute w-[298px] h-[298px] xl:w-[490px] xl:h-[490px] mix-blend-lighten ml-4"
+          className="absolute w-[290px] h-[290px] xl:w-[490px] xl:h-[490px] mix-blend-lighten ml-4"
         >
           <Image
             src={photo}
