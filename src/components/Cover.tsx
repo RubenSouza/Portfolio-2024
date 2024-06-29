@@ -1,7 +1,5 @@
 import Image from "next/image";
-// import photo from "../assets/img/cover/photo.png";
-// import photo from "../assets/img/cover/avatar2.svg";
-import photo from "../assets/img/cover/capa.svg";
+import photo from "../assets/img/cover/capa2.png";
 
 import { motion } from "framer-motion";
 
