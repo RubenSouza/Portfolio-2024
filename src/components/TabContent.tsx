@@ -18,7 +18,7 @@ const TabContent = ({ activeTab, data }: TabContentProps) => {
             <p className="text-primary-500">{data.education.description}</p>
             <div
               className="flex flex-col items-center md:grid grid-cols-1 xl:grid-cols-2 gap-10
-            md:max-h-[450px] xl:overflow-y-scroll xl:custom-scrollbar"
+            md:max-h-[450px] xl:overflow-y-scroll custom-scrollbar"
             >
               {data.education.items.map((item, index) => (
                 <div
@@ -41,14 +41,32 @@ const TabContent = ({ activeTab, data }: TabContentProps) => {
             <h3 className="text-3xl font-bold">{data.skills.title}</h3>
             <p className="text-primary-500">{data.skills.description}</p>
             <div>
-              <ul className="flex flex-wrap gap-5">
+              <ul
+                className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-[350px] 
+              md:max-w-none md:max-h-[600px] xl:overflow-y-scroll 
+              custom-scrollbar overflow-x-hidden"
+              >
                 {data.skills.skillList.map((skill, index) => (
                   <li
                     key={index}
-                    className="flex flex-col items-center gap-2 text-primary-500"
+                    className="flex flex-col items-center  
+                    text-primary-500 group hover:text-accent cursor-pointer mr-1"
                   >
-                    <skill.icon size={50} />
-                    <p className="text-lg font-semibold">{skill.title}</p>
+                    <p
+                      className="text-sm invisible group-hover:visible transition-all 
+                       delay-100 duration-300 ease-in-out"
+                    >
+                      {skill.title}
+                    </p>
+                    <div
+                      className="bg-secondary-300/60 h-[140px] w-[140px] 
+                      rounded-lg flex items-center justify-center"
+                    >
+                      <skill.icon
+                        className="w-14 h-14 text-primary-100 
+                      group-hover:text-accent"
+                      />
+                    </div>
                   </li>
                 ))}
               </ul>
@@ -56,11 +74,27 @@ const TabContent = ({ activeTab, data }: TabContentProps) => {
           </div>
         )}
         {activeTab === 3 && (
-          <div>
-            <p className="text-gray-500">
-              This is the <em className="font-semibold text-gray-800">third</em>{" "}
-              item`s tab body.
-            </p>
+          <div
+            className="flex flex-col gap-10 max-w-[350px] md:max-w-none
+        "
+          >
+            <h3 className="text-3xl font-bold">{data.about.title}</h3>
+            <p className="text-primary-500">{data.about.description}</p>
+            <div>
+              <ul className="grid grid-cols-2 w-[600px] gap-5">
+                {data.about.info.map((item, index) => (
+                  <li
+                    key={index}
+                    className="flex items-center gap-5 text-primary-500"
+                  >
+                    <p className="text-primary-500 ">{item.fieldName}</p>
+                    <p className="text-primary-100 font-semibold text-lg">
+                      {item.description}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         )}
       </div>
@@ -69,4 +103,3 @@ const TabContent = ({ activeTab, data }: TabContentProps) => {
 };
 
 export default TabContent;
-50;

@@ -35,6 +35,10 @@ const resumeData: ResumeData = {
         description: "2 years",
       },
       {
+        fieldName: "Discord",
+        description: "RúbenEliel#3296",
+      },
+      {
         fieldName: "Nationality",
         description: "Brazilian",
       },
@@ -90,11 +94,11 @@ const resumeData: ResumeData = {
     description: "My technical skills and tools.",
     skillList: [
       {
-        title: "HTML",
+        title: "HTML5",
         icon: FaHtml5,
       },
       {
-        title: "CSS",
+        title: "CSS3",
         icon: FaCss3,
       },
       {
@@ -121,6 +125,34 @@ const resumeData: ResumeData = {
         title: "Figma",
         icon: FaFigma,
       },
+      {
+        title: "HTML5",
+        icon: FaHtml5,
+      },
+      {
+        title: "CSS3",
+        icon: FaCss3,
+      },
+      {
+        title: "JavaScript",
+        icon: FaJs,
+      },
+      {
+        title: "React",
+        icon: FaReact,
+      },
+      {
+        title: "Node.js",
+        icon: FaNodeJs,
+      },
+      {
+        title: "Tailwind CSS",
+        icon: SiTailwindcss,
+      },
+      {
+        title: "Next.js",
+        icon: SiNextdotjs,
+      },
     ],
   },
 };
@@ -131,7 +163,7 @@ const Resume = () => {
   return (
     <section className="container py-12">
       <div className="flex flex-col items-center md:flex-row md:items-start gap-10 xl:gap-16">
-        <div className="max-w-[350px] flex flex-col gap-10">
+        <div className="min-w-[350px] max-w-[350px] flex flex-col gap-10">
           <h2 className="text-5xl font-bold">Why hire me?</h2>
           <p className="text-primary-500">
             {
