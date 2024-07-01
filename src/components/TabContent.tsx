@@ -75,13 +75,16 @@ const TabContent = ({ activeTab, data }: TabContentProps) => {
         )}
         {activeTab === 3 && (
           <div
-            className="flex flex-col gap-10 max-w-[350px] md:max-w-none
-        "
+            className="flex flex-col gap-10 max-w-[350px] xl:max-w-none 
+        overflow-x-hidden"
           >
             <h3 className="text-3xl font-bold">{data.about.title}</h3>
             <p className="text-primary-500">{data.about.description}</p>
-            <div>
-              <ul className="grid grid-cols-2 w-[600px] gap-5">
+            <div className="w-full">
+              <ul
+                className="flex flex-col xl:grid xl:grid-cols-2 xl:w-[600px] 
+              gap-5"
+              >
                 {data.about.info.map((item, index) => (
                   <li
                     key={index}
