@@ -23,6 +23,26 @@
   .text-outline-hover {
     -webkit-text-stroke: 1px #ec4e20;
   }
+
+  .custom-scrollbar {
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 9999px;
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 9999px;
+      background-color: #ec4e20;
+    }
+    .dark &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+    .dark &::-webkit-scrollbar-thumb {
+      background-color: #1f2937;
+    }
+  }
 }
 
 body {

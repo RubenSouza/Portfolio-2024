@@ -10,28 +10,28 @@ const services = [
     title: "Web development",
     description:
       "We build modern, responsive, and high-performance websites using the latest web technologies to ensure your business has a strong and efficient online presence.",
-    link: "/service-1",
+    link: "/contact",
   },
   {
     number: "02",
     title: "Mobile development",
     description:
       "We develop intuitive and high-performance mobile apps for iOS and Android, providing users with a seamless and enjoyable experience.",
-    link: "/service-2",
+    link: "/contact",
   },
   {
     number: "03",
     title: "UX/UI Design",
     description:
       "We create attractive and functional user interfaces that ensure intuitive navigation and an exceptional user experience, aligning aesthetics with usability.",
-    link: "/service-3",
+    link: "/contact",
   },
   {
     number: "04",
     title: "SEO",
     description:
       "We optimize websites for search engines, increasing visibility and improving your site's ranking in search results, attracting more organic traffic.",
-    link: "/service-3",
+    link: "/contact",
   },
 ];
 
