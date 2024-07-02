@@ -10,11 +10,11 @@ import {
   FaNodeJs,
 } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
-// import badge from "../../assets/img/badge/badge.svg";
 import cap from "../../assets/img/badge/badge.svg";
 import TabContent from "@/components/TabContent";
 import TabOptions from "@/components/TabOptions";
 import { ResumeData } from "../../../types";
+import { motion } from "framer-motion";
 
 const resumeData: ResumeData = {
   about: {
@@ -162,20 +162,28 @@ const Resume = () => {
 
   return (
     <section className="container py-12">
-      <div className="flex flex-col items-center md:flex-row md:items-start gap-10 xl:gap-16">
-        <div className="min-w-[350px] max-w-[350px] flex flex-col gap-10">
-          <h2 className="text-5xl font-bold">Why hire me?</h2>
-          <p className="text-primary-500">
-            {
-              "I'm a dedicated developer focused on providing creative yet complete user experiences"
-            }
-          </p>
-          <TabOptions activeTab={activeTab} setActiveTab={setActiveTab} />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          transition: { delay: 2, duration: 0.4, ease: "easeInOut" },
+        }}
+      >
+        <div className="flex flex-col items-center md:flex-row md:items-start gap-10 xl:gap-16">
+          <div className="min-w-[350px] max-w-[350px] flex flex-col gap-10">
+            <h2 className="text-5xl font-bold">Why hire me?</h2>
+            <p className="text-primary-500">
+              {
+                "I'm a dedicated developer focused on providing creative yet complete user experiences"
+              }
+            </p>
+            <TabOptions activeTab={activeTab} setActiveTab={setActiveTab} />
+          </div>
+          <div className="">
+            <TabContent activeTab={activeTab} data={resumeData} />
+          </div>
         </div>
-        <div className="">
-          <TabContent activeTab={activeTab} data={resumeData} />
-        </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
