@@ -52,10 +52,7 @@ const TabContent = ({ activeTab, data }: TabContentProps) => {
                     className="flex flex-col items-center  
                     text-primary-500 group hover:text-accent cursor-pointer mr-1"
                   >
-                    <p
-                      className="text-sm invisible group-hover:visible transition-all 
-                       delay-100 duration-300 ease-in-out"
-                    >
+                    <p className="text-sm invisible group-hover:visible">
                       {skill.title}
                     </p>
                     <div
