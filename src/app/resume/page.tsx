@@ -72,25 +72,25 @@ const resumeData: ResumeData = {
     items: [
       {
         title: "Desenvolvimento de Sistemas",
-        subtitle: "Descomplica - EAD",
+        subtitle: "Descomplica - Graduação",
         date: "2022 - 2024",
         description: "Tech University",
       },
       {
         title: "Desenvolvimento fullstack",
-        subtitle: "Programador - BR",
+        subtitle: "Programador BR - Curso",
         date: "2022",
         description: "Online Course",
       },
       {
         title: "Desenvolvimento Full Stack ",
-        subtitle: "Hiring Coders",
+        subtitle: "Hiring Coders - Bootcamp",
         date: "2023",
         description: "Online Course",
       },
       {
         title: "Desenvolvimento Back end",
-        subtitle: "ONE - Oracle",
+        subtitle: "ONE(Oracle) - Curso",
         date: "2024",
         description: "Online Course",
       },
