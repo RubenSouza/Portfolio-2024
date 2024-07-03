@@ -20,27 +20,27 @@ const resumeData: ResumeData = {
   about: {
     title: "About Me",
     description:
-      "I am a full-stack developer with a passion for building beautiful and functional apps and websites. I specialize in creating responsive and high-performance applications using the lates technologies.",
+      "Sou um desenvolvedor full-stack apaixonado por criar aplicativos e websites de alta performance. Sou especialista em criar aplicações responsivas e de alta performance utilizando as mais recentes tecnologias.",
     info: [
       {
-        fieldName: "Name",
+        fieldName: "Nome",
         description: "Rúben Eliel",
       },
       {
-        fieldName: "Phone",
+        fieldName: "Telefone",
         description: "(+55) 83 9 9135-8394",
       },
       {
-        fieldName: "Experience",
-        description: "2 years",
+        fieldName: "Experiência",
+        description: "2 anos",
       },
       {
         fieldName: "Discord",
         description: "RúbenEliel#3296",
       },
       {
-        fieldName: "Nationality",
-        description: "Brazilian",
+        fieldName: "Nacionalidade",
+        description: "Brasileiro",
       },
 
       {
@@ -50,39 +50,39 @@ const resumeData: ResumeData = {
 
       {
         fieldName: "Freelance",
-        description: "Available",
+        description: "Disponível",
       },
       {
-        fieldName: "Languages",
-        description: "Portuguese, English, Spanish",
+        fieldName: "Idiomas",
+        description: "Português, Inglês, Espanhol",
       },
     ],
   },
   education: {
     icon: cap,
-    title: "My Education",
-    description: "Take a look at all my bachelor's, bootcamp's and courses.",
+    title: "Minhas formações",
+    description: "Dê uma olhada nas minhas formações acadêmicas e cursos.",
     items: [
       {
-        title: "Bachelor in Information Systems",
+        title: "Desenvolvimento de Sistemas",
         subtitle: "Descomplica - EAD",
         date: "2022 - 2024",
         description: "Tech University",
       },
       {
-        title: "Full Stack Web Development Course",
+        title: "Desenvolvimento fullstack",
         subtitle: "Programador - BR",
         date: "2022",
         description: "Online Course",
       },
       {
-        title: "Full Stack Web Development Bootcamp",
-        subtitle: "Hiring Coders - Gama Academy",
+        title: "Desenvolvimento Full Stack ",
+        subtitle: "Hiring Coders",
         date: "2023",
         description: "Online Course",
       },
       {
-        title: "Back End Web Development Bootcamp",
+        title: "Desenvolvimento Back end",
         subtitle: "ONE - Oracle",
         date: "2024",
         description: "Online Course",
@@ -90,8 +90,8 @@ const resumeData: ResumeData = {
     ],
   },
   skills: {
-    title: "My Skills",
-    description: "My technical skills and tools.",
+    title: "Tecnologias",
+    description: "Aqui estão algumas das ferramentas e tecnologias que utilizo",
     skillList: [
       {
         title: "HTML5",
@@ -171,10 +171,10 @@ const Resume = () => {
       >
         <div className="flex flex-col items-center md:flex-row md:items-start gap-10 xl:gap-16">
           <div className="min-w-[350px] max-w-[350px] flex flex-col gap-10">
-            <h2 className="text-5xl font-bold">Why hire me?</h2>
+            <h2 className="text-5xl font-bold">Por que me contratar?</h2>
             <p className="text-primary-500">
               {
-                "I'm a dedicated developer focused on providing creative yet complete user experiences"
+                "Um desenvolvedor focado em fornecer experiências de usuário criativas e completas"
               }
             </p>
             <TabOptions activeTab={activeTab} setActiveTab={setActiveTab} />

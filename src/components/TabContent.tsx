@@ -28,8 +28,11 @@ const TabContent = ({ activeTab, data }: TabContentProps) => {
                 >
                   <p className="text-accent">{item.date}</p>
                   <h4 className="text-xl font-medium">{item.title}</h4>
-                  <p className="text-primary-500 list-item mx-5 list marker:text-accent">
-                    {item.description}
+                  <p
+                    className="text-primary-500 list-item mx-5 list 
+                  marker:text-accent"
+                  >
+                    {item.subtitle}
                   </p>
                 </div>
               ))}
@@ -79,7 +82,7 @@ const TabContent = ({ activeTab, data }: TabContentProps) => {
             <p className="text-primary-500">{data.about.description}</p>
             <div className="w-full">
               <ul
-                className="flex flex-col xl:grid xl:grid-cols-2 xl:w-[600px] 
+                className="flex flex-col xl:grid xl:grid-cols-2 xl:w-[800px] 
               gap-5"
               >
                 {data.about.info.map((item, index) => (

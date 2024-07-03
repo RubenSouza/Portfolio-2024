@@ -16,7 +16,7 @@ const TextArea = ({ name, value, onChange }: Props) => {
       dark:bg-neutral-900 dark:border-neutral-700 dark:text-primary-100
       dark:placeholder-primary-500 dark:focus:ring-accent min-h-[180px]"
       rows={3}
-      placeholder="Type your message here."
+      placeholder="Escreva sua mensagem aqui."
     />
   );
 };

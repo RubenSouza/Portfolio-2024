@@ -84,7 +84,7 @@ const Nav = () => {
             className={`${pathname === "/" ? activeLink : inactiveLink}`}
             href="/"
           >
-            Home
+            Página inicial
           </Link>
           <Link
             className={`${
@@ -92,19 +92,19 @@ const Nav = () => {
             }`}
             href="/services"
           >
-            Services
+            Serviços
           </Link>
           <Link
             className={`${pathname === "/resume" ? activeLink : inactiveLink}`}
             href="/resume"
           >
-            Resume
+            Resumo
           </Link>
           <Link
             className={`${pathname === "/work" ? activeLink : inactiveLink}`}
             href="/work"
           >
-            Work
+            Projetos
           </Link>
           <Link
             className={`${
@@ -112,7 +112,7 @@ const Nav = () => {
             } `}
             href="/contact"
           >
-            Contact
+            Contato
           </Link>
         </div>
       </div>

@@ -9,8 +9,8 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { useSwiper } from "swiper/react";
-import projectCover1 from "../../assets/img/projects/thumb1.png";
-import projectCover2 from "../../assets/img/projects/thumb2.png";
+import projectCover1 from "../../assets/img/projects/thumb0.png";
+import projectCover2 from "../../assets/img/projects/thumb1.png";
 import projectCover3 from "../../assets/img/projects/thumb3.png";
 import { RiArrowLeftWideFill, RiArrowRightWideFill } from "react-icons/ri";
 import Image from "next/image";
@@ -19,33 +19,23 @@ import { useState } from "react";
 const projects = [
   {
     id: 1,
-    title: "Front End Project",
+    title: "Projeto Front End",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt unde commodi et quia repellat repellendus dolorem iste libero ab dolor saepe tenetur atque, ullam officia perspiciatis harum inventore fugit itaque?",
-    tech: "Html 5, Css 3, Javascript",
+      "Desenvolvi um site de portfólio para uma professora de música, projetado para exibir suas habilidades, experiência e paixão pela música de maneira cativante. O objetivo principal do site é fornecer uma plataforma onde a professora possa compartilhar suas conquistas, projetos e metodologia de ensino com alunos em potencial e outros profissionais do setor.",
+    tech: "React, Typescript, Tailwind CSS, Framer Motion ",
     image: projectCover1,
-    site: "https://github.com",
-    code: "https://github.com",
+    site: "https://thaysoliveira.com.br",
+    code: "https://github.com/RubenSouza/thaysoliveira",
   },
   {
     id: 2,
     title: "Back End Project",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt unde commodi et quia repellat repellendus dolorem iste libero ab dolor saepe tenetur atque, ullam officia perspiciatis harum inventore fugit itaque?",
-    tech: "Node Js, Express Js, Mongodb",
-    image: projectCover1,
-    site: "https://github.com",
-    code: "https://github.com",
-  },
-  {
-    id: 3,
-    title: "Full Stack Project",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt unde commodi et quia repellat repellendus dolorem iste libero ab dolor saepe tenetur atque, ullam officia perspiciatis harum inventore fugit itaque?",
-    tech: "Html 5, Css 3, Javascript, Node Js, Express Js, Mongodb",
-    image: projectCover1,
-    site: "https://github.com",
-    code: "https://github.com",
+      "O Koi Games E-commerce é um projeto desenvolvido como parte de um estudo em desenvolvimento web, com o propósito de proporcionar aos usuários uma plataforma onde eles possam explorar uma variedade de jogos, pesquisar detalhes sobre cada jogo, fazer login ou se registrar como cliente, adicionar jogos ao carrinho de compras e, por fim, realizar compras de jogos em mídia virtual.",
+    tech: "React, Typescript, Tailwind CSS, Node Js, Express Js, MongoDB",
+    image: projectCover2,
+    site: "https://ecommerce-rubensouzas-projects.vercel.app",
+    code: "https://github.com/RubenSouza/Ecommerce",
   },
 ];
 

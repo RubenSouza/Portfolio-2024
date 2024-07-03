@@ -18,7 +18,7 @@ const TabOptions = ({ activeTab, setActiveTab }: TabOptionsProps) => {
           }`}
           onClick={() => setActiveTab(1)}
         >
-          Education
+          Formações
         </button>
         <button
           type="button"
@@ -29,7 +29,7 @@ const TabOptions = ({ activeTab, setActiveTab }: TabOptionsProps) => {
           }`}
           onClick={() => setActiveTab(2)}
         >
-          Skills
+          Habilidades
         </button>
         <button
           type="button"
@@ -40,7 +40,7 @@ const TabOptions = ({ activeTab, setActiveTab }: TabOptionsProps) => {
           }`}
           onClick={() => setActiveTab(3)}
         >
-          About me
+          Sobre mim
         </button>
       </nav>
     </div>

@@ -9,28 +9,28 @@ const services = [
     number: "01",
     title: "Web development",
     description:
-      "We build modern, responsive, and high-performance websites using the latest web technologies to ensure your business has a strong and efficient online presence.",
+      "Sites modernos, responsivos e de alto desempenho usando as mais recentes tecnologias da Web para garantir que sua empresa tenha uma presença on-line forte e eficiente.",
     link: "/contact",
   },
   {
     number: "02",
     title: "Mobile development",
     description:
-      "We develop intuitive and high-performance mobile apps for iOS and Android, providing users with a seamless and enjoyable experience.",
+      "Aplicativos móveis intuitivos e de alto desempenho para iOS e Android, proporcionando aos usuários uma experiência perfeita e agradável.",
     link: "/contact",
   },
   {
     number: "03",
     title: "UX/UI Design",
     description:
-      "We create attractive and functional user interfaces that ensure intuitive navigation and an exceptional user experience, aligning aesthetics with usability.",
+      "Interfaces de usuário atraentes e funcionais que garantem uma navegação intuitiva e uma experiência de usuário excepcional, alinhando estética com usabilidade.",
     link: "/contact",
   },
   {
     number: "04",
     title: "SEO",
     description:
-      "We optimize websites for search engines, increasing visibility and improving your site's ranking in search results, attracting more organic traffic.",
+      "Sites otimizados para os mecanismos de busca, aumentando a visibilidade e melhorando o ranqueamento do seu site nos resultados de busca, atraindo mais tráfego orgânico.",
     link: "/contact",
   },
 ];

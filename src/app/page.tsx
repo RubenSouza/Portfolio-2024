@@ -16,24 +16,22 @@ const Home = () => {
     <section className="h-full">
       <div className="container h-full px-4 mx-auto">
         <div className="flex flex-col xl:flex-row items-center xl:py-10 justify-between">
-          {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software developer</span>
+            <span className="text-xl">Desenvolvedor de software</span>
             <h1 className="h1">
-              Hello I`m
+              Olá, eu sou
               <br />
               <span className="text-accent">Rúben Eliel</span>
             </h1>
             <p className="max-w-[500px] my-5 text-primary-500">
               {
-                "I am a freelance software developer with expertise in web development. Let's work together to bring your ideas to life!"
+                "Sou um desenvolvedor de software freelance com experiência em desenvolvimento web. Vamos trabalhar juntos para dar vida às suas ideias!"
               }
             </p>
             <div
               className="flex w-full pt-4 flex-col xl:flex-row items-center justify-center xl:justify-start 
             space-y-4 xl:space-y-0"
             >
-              {/* download button */}
               <Button
                 type="outline"
                 key={"cv_button"}
@@ -42,7 +40,6 @@ const Home = () => {
                 <p>Download CV</p>
                 <CgSoftwareDownload className="w-6 h-6" />
               </Button>
-              {/* social medias */}
               <div className="flex space-x-4 xl:px-6">
                 <Link href={"https://github.com/RubenSouza"} target="_blank">
                   <FaGithub className="text-primary-500 w-8 h-8 hover:text-accent  " />
@@ -62,7 +59,6 @@ const Home = () => {
               </div>
             </div>
           </div>
-          {/* photo */}
           <div className="order-1 xl:order-none ">
             <Cover />
           </div>

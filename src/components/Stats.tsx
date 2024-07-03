@@ -4,19 +4,19 @@ import CountUp from "react-countup";
 
 const stats = [
   {
-    title: "Projects completed",
+    title: "Projetos completos",
     count: 10,
   },
   {
-    title: "Happy customers",
+    title: "Clientes satisfeitos",
     count: 10,
   },
   {
-    title: "Cups of coffee",
+    title: "Xícaras de café",
     count: 150,
   },
   {
-    title: "Hours of work",
+    title: "Horas de trabalho",
     count: 999,
   },
 ];

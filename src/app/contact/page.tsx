@@ -27,11 +27,11 @@ const Contact = () => {
           flex-col gap-6 order-2 lg:order-none"
             >
               <h3 className="text-accent text-4xl font-semibold">
-                {"Let's work together"}
+                {"Vamos conversar?"}
               </h3>
               <p className="text-primary-500">
                 {
-                  "Feel free to reach out to me if you have any questions, collaboration ideas, or just want to say hello."
+                  "Sinta-se à vontade para entrar em contato se tiver ideias, dúvidas ou quer apenas dizer um oi."
                 }
               </p>
               <form
@@ -42,15 +42,15 @@ const Contact = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <Input
                     type="text"
-                    name="name"
-                    placeholder="Name"
+                    name="nome"
+                    placeholder="Nome"
                     value={name}
                     onChange={e => setName(e.target.value)}
                   />
                   <Input
                     type="text"
-                    name="lastname"
-                    placeholder="Lastname"
+                    name="sobrenome"
+                    placeholder="Sobrenome"
                     value={lastname}
                     onChange={e => setLastname(e.target.value)}
                   />
@@ -63,15 +63,15 @@ const Contact = () => {
                   />
                   <Input
                     type="text"
-                    name="phone"
-                    placeholder="Phone"
+                    name="telefone"
+                    placeholder="Telefone"
                     value={phone}
                     onChange={e => setPhone(e.target.value)}
                   />
                 </div>
                 <div className="min-w-full flex flex-col gap-4">
                   <SelectInput
-                    name="service"
+                    name="servico"
                     value={service}
                     onChange={e => setService(e.target.value)}
                   />
@@ -83,16 +83,16 @@ const Contact = () => {
                 </div>
                 <button
                   type="submit"
-                  className="bg-accent text-secondary-500 w-[160px] rounded-3xl 
+                  className="bg-accent text-secondary-500 w-[200px] rounded-3xl 
                 py-3 font-semibold hover:bg-accent/80"
                 >
-                  {"Send Message"}
+                  {"Enviar mensagem"}
                 </button>
               </form>
             </div>
             <div className="flex flex-col gap-10">
               <ContactItem
-                name="Phone"
+                name="Telefone"
                 icon={<IoLogoWhatsapp className="text-accent w-7 h-7" />}
                 description={`(+55) 83 98135-8394`}
               />

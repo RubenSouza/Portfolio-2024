@@ -16,7 +16,7 @@ const SelectInput = ({ name, value, onChange }: Props) => {
     dark:bg-neutral-900 dark:border-neutral-700 dark:text-primary-500 
     dark:placeholder-neutral-500 dark:focus:ring-accent"
     >
-      <option value="">Select a service</option>
+      <option value="">Selecione um serviço</option>
       <option value="Web development">Web development</option>
       <option value="Mobile development">Mobile development</option>
       <option value="UX/UI">UX/UI</option>
