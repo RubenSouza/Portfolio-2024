@@ -8,8 +8,15 @@ import {
   FaReact,
   FaFigma,
   FaNodeJs,
+  FaJava,
+  FaWordpress,
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiSpring } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
+import { IoMdGitBranch } from "react-icons/io";
+import { IoLogoFirebase } from "react-icons/io5";
+import { DiMongodb } from "react-icons/di";
+
 import cap from "../../assets/img/badge/badge.svg";
 import TabContent from "@/components/TabContent";
 import TabOptions from "@/components/TabOptions";
@@ -126,32 +133,32 @@ const resumeData: ResumeData = {
         icon: FaFigma,
       },
       {
-        title: "HTML5",
-        icon: FaHtml5,
+        title: "React Native",
+        icon: TbBrandReactNative,
       },
       {
-        title: "CSS3",
-        icon: FaCss3,
+        title: "Git",
+        icon: IoMdGitBranch,
       },
       {
-        title: "JavaScript",
-        icon: FaJs,
+        title: "Firebase",
+        icon: IoLogoFirebase,
       },
       {
-        title: "React",
-        icon: FaReact,
+        title: "MongoDB",
+        icon: DiMongodb,
       },
       {
-        title: "Node.js",
-        icon: FaNodeJs,
+        title: "Java",
+        icon: FaJava,
       },
       {
-        title: "Tailwind CSS",
-        icon: SiTailwindcss,
+        title: "Spring Boot",
+        icon: SiSpring,
       },
       {
-        title: "Next.js",
-        icon: SiNextdotjs,
+        title: "WordPress",
+        icon: FaWordpress,
       },
     ],
   },
