@@ -20,7 +20,7 @@ const projects = [
     id: 1,
     title: "Projeto Front End",
     description:
-      "Site de portfólio criado para uma professora de música. O site foi desenvolvido com a finalidade de fornecer uma plataforma onde a professora possa compartilhar suas conquistas, projetos, metodologia de ensino e paixão pela música.",
+      "Um site de portfólio para uma professora de música, visando compartilhar suas conquistas, projetos, metodologia de ensino e paixão pela música.",
     tech: "React, Typescript, Tailwind CSS, Framer Motion ",
     image: projectCover1,
     site: "https://thaysoliveira.com.br",
@@ -28,9 +28,9 @@ const projects = [
   },
   {
     id: 2,
-    title: "Back End Project",
+    title: "Full Stack Project",
     description:
-      "O Koi Games E-commerce é um projeto desenvolvido como parte de um estudo em desenvolvimento web, com o propósito de proporcionar aos usuários uma plataforma onde eles possam explorar uma variedade de jogos, pesquisar detalhes sobre cada jogo, fazer login ou se registrar como cliente, adicionar jogos ao carrinho de compras e, por fim, realizar compras de jogos em mídia virtual.",
+      "Um e-commerce completo para jogos. A plataforma permite aos usuários explorarem uma variedade de jogos, pesquisar detalhes, fazer login ou registro, adicionar jogos ao carrinho de compras e realizar compras de mídias virtuais através de pagamento por cartão de crédito.",
     tech: "React, Typescript, Tailwind CSS, Node Js, Express Js, MongoDB",
     image: projectCover2,
     site: "https://ecommerce-rubensouzas-projects.vercel.app",
