@@ -9,9 +9,8 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { useSwiper } from "swiper/react";
-import projectCover1 from "../../assets/img/projects/thumb0.png";
-import projectCover2 from "../../assets/img/projects/thumb1.png";
-import projectCover3 from "../../assets/img/projects/thumb3.png";
+import projectCover1 from "../../assets/img/projects/thumb1.png";
+import projectCover2 from "../../assets/img/projects/thumb2.png";
 import { RiArrowLeftWideFill, RiArrowRightWideFill } from "react-icons/ri";
 import Image from "next/image";
 import { useState } from "react";
@@ -21,7 +20,7 @@ const projects = [
     id: 1,
     title: "Projeto Front End",
     description:
-      "Desenvolvi um site de portfólio para uma professora de música, projetado para exibir suas habilidades, experiência e paixão pela música de maneira cativante. O objetivo principal do site é fornecer uma plataforma onde a professora possa compartilhar suas conquistas, projetos e metodologia de ensino com alunos em potencial e outros profissionais do setor.",
+      "Site de portfólio criado para uma professora de música. O site foi desenvolvido com a finalidade de fornecer uma plataforma onde a professora possa compartilhar suas conquistas, projetos, metodologia de ensino e paixão pela música.",
     tech: "React, Typescript, Tailwind CSS, Framer Motion ",
     image: projectCover1,
     site: "https://thaysoliveira.com.br",
@@ -81,7 +80,8 @@ const Work = () => {
                 <Link href={project.site} target="_blank">
                   <div className="flex flex-col gap-3 group">
                     <span
-                      className="text-xs text-accent invisible group-hover:visible
+                      className="text-xs text-accent md:invisible md:group-hover:visible
+                      order-2 xl:order-none
                     "
                     >
                       View Site
@@ -97,7 +97,8 @@ const Work = () => {
                 <Link href={project.code} target="_blank">
                   <div className="flex flex-col gap-3 group">
                     <span
-                      className="text-xs text-accent invisible group-hover:visible
+                      className="text-xs text-accent md:invisible md:group-hover:visible
+                      order-2 xl:order-none
                    "
                     >
                       View Code

@@ -25,9 +25,9 @@ import { motion } from "framer-motion";
 
 const resumeData: ResumeData = {
   about: {
-    title: "About Me",
+    title: "Sobre mim",
     description:
-      "Sou um desenvolvedor full-stack apaixonado por criar aplicativos e websites de alta performance. Sou especialista em criar aplicações responsivas e de alta performance utilizando as mais recentes tecnologias.",
+      "Sou um desenvolvedor full-stack apaixonado por música e tecnologia. Sou especialista em criar aplicações responsivas e de alta performance utilizando as mais recentes tecnologias.",
     info: [
       {
         fieldName: "Nome",
@@ -176,12 +176,15 @@ const Resume = () => {
           transition: { delay: 2, duration: 0.4, ease: "easeInOut" },
         }}
       >
-        <div className="flex flex-col items-center md:flex-row md:items-start gap-10 xl:gap-16">
+        <div
+          className="flex flex-col items-center md:flex-row md:items-start 
+        gap-10 xl:gap-16"
+        >
           <div className="min-w-[350px] max-w-[350px] flex flex-col gap-10">
             <h2 className="text-5xl font-bold">Por que me contratar?</h2>
             <p className="text-primary-500">
               {
-                "Um desenvolvedor focado em fornecer experiências de usuário criativas e completas"
+                "Com experiência e criatividade trabalhando em conjunto com as mais recentes tecnologias, posso ajudar a transformar suas ideias em realidade."
               }
             </p>
             <TabOptions activeTab={activeTab} setActiveTab={setActiveTab} />

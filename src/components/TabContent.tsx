@@ -40,7 +40,7 @@ const TabContent = ({ activeTab, data }: TabContentProps) => {
           </div>
         )}
         {activeTab === 2 && (
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-10 max-w-[350px] md:max-w-none">
             <h3 className="text-3xl font-bold">{data.skills.title}</h3>
             <p className="text-primary-500">{data.skills.description}</p>
             <div>

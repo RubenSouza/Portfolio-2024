@@ -31,7 +31,7 @@ const Contact = () => {
               </h3>
               <p className="text-primary-500">
                 {
-                  "Sinta-se à vontade para entrar em contato se tiver ideias, dúvidas ou quer apenas dizer um oi."
+                  "Sinta-se à vontade para entrar em contato se tiver ideias, dúvidas ou para dizer um oi."
                 }
               </p>
               <form
@@ -104,7 +104,7 @@ const Contact = () => {
               <ContactItem
                 name="Endereço"
                 icon={<MdPlace className="text-accent w-7 h-7" />}
-                description="Brazil, Alcantil - PB"
+                description="Brasil, Alcantil - PB"
               />
             </div>
           </div>
