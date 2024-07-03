@@ -1,0 +1,6 @@
+{
+  "index": {
+    "title": "Welcome to my site",
+    "description": "This is an example site to show how internationalization works on a Laravel site."
+  }
+}

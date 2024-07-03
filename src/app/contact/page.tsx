@@ -21,10 +21,10 @@ const Contact = () => {
     <section>
       <motion.div>
         <div className="container py-12 mx-auto">
-          <div className="flex items-center gap-[100px]">
+          <div className="flex flex-col lg:flex-row items-center gap-[100px]">
             <div
               className="bg-secondary-300/60 max-w-[600px] p-10 rounded-lg flex 
-          flex-col gap-6"
+          flex-col gap-6 order-2 lg:order-none"
             >
               <h3 className="text-accent text-4xl font-semibold">
                 {"Let's work together"}
