@@ -8,10 +8,6 @@ import Cover from "@/components/Cover";
 import Stats from "@/components/Stats";
 
 const Home = () => {
-  const handleButtonClick = () => {
-    console.log("Button clicked");
-  };
-
   return (
     <section className="h-full">
       <div className="container h-full px-4 mx-auto">
@@ -32,14 +28,12 @@ const Home = () => {
               className="flex w-full pt-4 flex-col xl:flex-row items-center justify-center xl:justify-start 
             space-y-4 xl:space-y-0"
             >
-              <Button
-                type="outline"
-                key={"cv_button"}
-                onClick={handleButtonClick}
-              >
-                <p>Download CV</p>
-                <CgSoftwareDownload className="w-6 h-6" />
-              </Button>
+              <a href="/ruben-oliveira-curriculo.pdf" download>
+                <Button type="outline" key={"cv_button"}>
+                  <p>Download CV</p>
+                  <CgSoftwareDownload className="w-6 h-6" />
+                </Button>
+              </a>
               <div className="flex space-x-4 xl:px-6">
                 <Link href={"https://github.com/RubenSouza"} target="_blank">
                   <FaGithub className="text-primary-500 w-8 h-8 hover:text-accent  " />

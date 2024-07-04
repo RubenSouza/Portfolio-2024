@@ -2,11 +2,10 @@ import React from "react";
 
 type ButtonProps = {
   type: "outline" | "solid";
-  onClick: () => void;
   children: React.ReactNode;
 };
 
-const Button = ({ children, type, onClick }: ButtonProps) => {
+const Button = ({ children, type }: ButtonProps) => {
   return (
     <button
       type="button"
@@ -18,7 +17,6 @@ const Button = ({ children, type, onClick }: ButtonProps) => {
             : "border-transparent bg-blue-600 text-primary-500 hover:bg-blue-700"
         }
         `}
-      onClick={onClick}
     >
       {children}
     </button>
