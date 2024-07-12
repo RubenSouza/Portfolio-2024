@@ -15,7 +15,9 @@ const TabContent = ({ activeTab, data }: TabContentProps) => {
           "
           >
             <h3 className="text-3xl font-bold">{data.education.title}</h3>
-            <p className="text-primary-500">{data.education.description}</p>
+            <p className="text-primary-500 hidden">
+              {data.education.description}
+            </p>
             <div
               className="flex flex-col items-center md:grid grid-cols-1 xl:grid-cols-2 gap-10
             md:max-h-[450px] xl:overflow-y-scroll custom-scrollbar"
