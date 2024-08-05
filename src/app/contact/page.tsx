@@ -36,7 +36,7 @@ const Contact = () => {
               </p>
               <form
                 className="flex flex-col gap-4"
-                action="https://formsubmit.co/rubem.eliel2012@gmail.com"
+                action="https://formsubmit.co/349d79100341e0709ff3531bdee6defb"
                 method="POST"
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
