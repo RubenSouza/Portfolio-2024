@@ -1,6 +1,6 @@
 [
   {
-    "relation": ["delegate_permission/common.get_login_creds"],
+    "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
       "package_name": "br.com.iniciador.demo",
@@ -8,9 +8,5 @@
         "F6:14:3D:83:DE:65:A0:CA:6A:8A:0B:4C:5D:D5:40:4C:B5:5E:8B:6F:94:00:8C:D7:8A:36:06:95:18:63:50:F6"
       ]
     }
-  },
-  {
-    "relation": ["delegate_permission/common.get_login_creds"],
-    "target": { "namespace": "web", "site": "https://rubenoliveira.net" }
   }
 ]
